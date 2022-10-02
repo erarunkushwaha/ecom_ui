@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecom_ui/screens/my_drawer.dart';
+import 'package:ecom_ui/widgets/my_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
