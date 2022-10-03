@@ -3,6 +3,8 @@ import 'package:ecom_ui/auth_screen/register_tab.dart';
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
+  const AuthScreen({super.key});
+
   @override
   State<AuthScreen> createState() => _AuthScreenState();
 }
@@ -59,7 +61,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 stops: [0.0, 1.0],
                 tileMode: TileMode.clamp),
           ),
-          child: TabBarView(
+          child: const TabBarView(
             children: [LoginTab(), RegisterTab()],
           ),
         ),

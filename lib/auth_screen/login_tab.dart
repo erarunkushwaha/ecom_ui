@@ -10,7 +10,7 @@ class LoginTab extends StatefulWidget {
 class _LoginTabState extends State<LoginTab> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text("Login Page"),
     );
   }

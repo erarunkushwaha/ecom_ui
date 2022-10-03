@@ -4,6 +4,8 @@ import 'package:ecom_ui/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class MySplashScreen extends StatefulWidget {
+  const MySplashScreen({super.key});
+
   @override
   State<MySplashScreen> createState() => _MySplashScreenState();
 }
@@ -11,7 +13,7 @@ class MySplashScreen extends StatefulWidget {
 class _MySplashScreenState extends State<MySplashScreen> {
   splashScreenTimer() {
     Timer(const Duration(seconds: 4), () async {
-      Navigator.push(context, MaterialPageRoute(builder: (c) => HomeScreen()));
+      Navigator.push(context, MaterialPageRoute(builder: (c) => const HomeScreen()));
     });
   }
 
@@ -21,6 +23,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
     splashScreenTimer();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Material(
       child: Container(

@@ -16,9 +16,10 @@ class _MyDrawerState extends State<MyDrawer> {
         children: [
           // header
           Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Column(
               children: [
+                // ignore: sized_box_for_whitespace
                 Container(
                   width: 100,
                   height: 100,
@@ -42,7 +43,7 @@ class _MyDrawerState extends State<MyDrawer> {
           ),
           // body
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Column(
               children: [
                 const Divider(

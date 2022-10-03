@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CustomTextField extends StatefulWidget {
   TextEditingController? textEditingController;
   IconData? iconData;
@@ -8,6 +9,7 @@ class CustomTextField extends StatefulWidget {
   bool? enable = true;
 
   CustomTextField({
+    super.key,
     this.textEditingController,
     this.iconData,
     this.hintText,
