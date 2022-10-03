@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1056177948245",
+    "project_id": "ishop-flutter-c9220",
+    "storage_bucket": "ishop-flutter-c9220.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056177948245:android:5880593d7ffff218d2f6dc",
+        "android_client_info": {
+          "package_name": "com.ishopflutter.ecom_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056177948245-gj8188saskvpvi8gc80elm0klff03ve8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8rhIamQDPkuBwLSRqaYUVh4cIrAuCAdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056177948245-gj8188saskvpvi8gc80elm0klff03ve8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
