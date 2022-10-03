@@ -1,8 +1,6 @@
 import 'package:ecom_ui/auth_screen/login_tab.dart';
 import 'package:ecom_ui/auth_screen/register_tab.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class AuthScreen extends StatefulWidget {
   @override
@@ -43,7 +41,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 ),
               ),
               Tab(
-                text: "Registration",
+                text: "Registraion",
                 icon: Icon(
                   Icons.person,
                   color: Colors.white,
