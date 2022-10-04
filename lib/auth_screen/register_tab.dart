@@ -1,5 +1,7 @@
+import 'dart:io';
 import 'package:ecom_ui/widgets/text_filed.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class RegisterTab extends StatefulWidget {
   const RegisterTab({super.key});
@@ -16,6 +18,16 @@ class _RegisterTabState extends State<RegisterTab> {
       TextEditingController();
   GlobalKey<FormState> formkey = GlobalKey<FormState>();
 
+  XFile? imgXfile;
+  final ImagePicker imagePicker = ImagePicker();
+
+  getImageFromGallery() async {
+    imgXfile = await imagePicker.pickImage(source: ImageSource.gallery);
+    setState(() {
+      imgXfile;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -24,12 +36,21 @@ class _RegisterTabState extends State<RegisterTab> {
           const SizedBox(height: 25),
           // get capture image
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              getImageFromGallery();
+            },
             child: CircleAvatar(
               backgroundColor: Colors.white,
               radius: MediaQuery.of(context).size.width * 0.15,
-              child: const Icon(Icons.add_photo_alternate,
-                  color: Colors.grey, size: 70),
+              backgroundImage: imgXfile == null
+                  ? null
+                  : FileImage(
+                      File(imgXfile!.path),
+                    ),
+              child: imgXfile == null
+                  ? const Icon(Icons.add_photo_alternate,
+                      color: Colors.grey, size: 70)
+                  : null,
             ),
           ),
           const SizedBox(height: 25),
